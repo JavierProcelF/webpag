@@ -5,7 +5,7 @@ const path=require('path');//para requerir index no importa el S.O
 const app=express();//se configura a express como app que es el servidor
 //settings
 app.set('port', process.env.PORT || 3000);// se configura para definir el puerto en forma general en 3000, sirve mejor desde app porque siempre se llama a esta variable
-app.set('views',path.join(__dirname+'views'));//para llamar a index.ejs
+app.set('views',path.join(__dirname+'/views'));//para llamar a index.ejs
 app.engine('html',require('ejs').renderFile);//renderizar usando html ya no ejs pero igual con motor de ejs
 app.set('view engine','ejs');
 //middlewares
