@@ -13,7 +13,7 @@ app.use(morgan('dev'));
 //routes
 app.use(require('./routes/'));//se importa routes desde routes/index.js a index.js principal
 //static files
-app.use(express.static(path.join(__dirname,'public')));//se puede acceder desde el navegador a la carpeta public
+app.use(express.static(path.join(__dirname,'/public')));//se puede acceder desde el navegador a la carpeta public
 //listening the server
 app.listen(app.get('port'),()=>{//el servidor escuhca el puerto 3000//app.get para llamar al puerto
     console.log('Server on port',app.get('port'));
