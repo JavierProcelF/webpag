@@ -1,0 +1,21 @@
+{
+  "name": "paginaweb",
+  "version": "1.0.0",
+  "description": "Pagina Web con NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "dev": "nodemon src"
+  },
+  "author": "Javier Procel",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "now": "^15.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
